@@ -34,6 +34,8 @@ GEM
     eventmachine (1.0.7)
     execjs (2.5.2)
     ffi (1.9.8)
+    fittext (0.0.5)
+      compass (>= 0.10.0.rc3)
     haml (4.0.6)
       tilt
     hike (1.2.3)
@@ -128,6 +130,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coffee-script
+  fittext
   haml
   middleman (~> 3.3.12)
   middleman-blog

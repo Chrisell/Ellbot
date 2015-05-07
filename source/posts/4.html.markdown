@@ -1,0 +1,6 @@
+---
+post: 4
+title: Short titles for now.
+date: 2015-2-21
+tags: design, middleman, ruby
+---

@@ -1,0 +1,29 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+    %title Ellbot - Blog about stuff
+    = stylesheet_link_tag "normalize", "all"
+    = javascript_include_tag  "all"
+  %body{:class => page_classes}
+    %header
+      = partial :hamburger
+      %h1 Ellbot
+      %span The rantings of a Philadelphia based developer.
+    %nav.hidden
+      %a{href: '#'}
+        %span.about
+        About
+      %a{href: '#'}
+        %span.github
+        Github
+      %a{href: '#'}
+        %span.twitter
+        Twitter
+      %a{href: '#'}
+        %span.email
+        Email
+    #content
+      = yield

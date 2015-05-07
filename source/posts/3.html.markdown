@@ -1,0 +1,6 @@
+---
+post: 3
+title: So I made a Blog...
+date: 2015-5-5
+tags: design, middleman, ruby
+---

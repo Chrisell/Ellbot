@@ -53,6 +53,16 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :haml, { :ugly => true, :format => :html5 }
+
+activate :blog do |blog|
+  blog.layout = "post.html"
+  blog.permalink = "{post}"
+  blog.sources = "posts/{post}.html"
+  blog.tag_template = "tag.html"
+  blog.taglink = "tag/{tag}"
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -69,4 +79,10 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+helpers do
+  def posts
+    blog.articles
+  end
 end
